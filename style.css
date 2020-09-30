@@ -12,6 +12,14 @@ header {
     margin: auto;
 }
 
+a {
+    color: #86a0b4;
+}
+
+.container {
+    margin: 0 auto;
+}
+
 h1 {
     color: #eee;
     font-size: 28px;
@@ -19,11 +27,15 @@ h1 {
     margin: auto;
 }
 
-h2 {
+.header-black {
     font-size: 24px;
     margin: auto;
     padding-left: 30px;
     padding-top: 30px;
+}
+
+p {
+    margin-right: 20px;
 }
 
 #main-bio {
@@ -33,11 +45,26 @@ h2 {
     line-height: 1.5;
 }
 
+/* box on right side of page */
 #contact-info {
-    margin: auto;
-    float: left;
+    margin: 50px auto;
+    position: fixed;
+    right: 0;
     width: 30%;
     line-height: 1.5;
+    background-color: #333333;
+}
+
+#header-white {
+    color: whitesmoke;
+    font-size: 24px;
+    margin: auto;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#list-white {
+    color: whitesmoke;
 }
 
 #bio-image {
@@ -45,9 +72,11 @@ h2 {
     float: left;
     width: 200px;
     height: 250px;
-    line-height: 1.5;
+    line-height: 1.5em;
 }
 
-a {
-    color: #d21034;
-}
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
